@@ -1,0 +1,76 @@
+ html, body {
+     height: 100%;
+     margin: 0;
+     padding: 0;
+}
+ body {
+     padding: 0 !important;
+}
+ table {
+     font-size: 12px;
+}
+/* Size and shape of the maps */
+ #map {
+     min-height: 600px !important;
+     max-width: 800px!important;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 3%;
+}
+/* End of maps */
+/* radio Button */
+ .input-buton{
+     display: flex;
+     justify-content: center;
+     margin: 20px;
+}
+ #hotel{
+     margin-left: 10px;
+     margin-right: 10px;
+}
+ #restaurant{
+     margin-left: 10px;
+     margin-right: 10px;
+}
+ #tourist{
+     margin-left: 10px;
+     margin-right: 10px;
+}
+/* End radio Button */
+/* option city */
+ #controls {
+     -webkit-box-flex: 1 1 140px;
+     -ms-flex: 1 1 140px;
+     flex: 1 1 140px;
+     width: 200px;
+     height: 50px;
+     margin: auto;
+}
+ #city {
+     width: 100%;
+     height: 40px;
+}
+ #listing {
+     margin: 50px;
+}
+ #resultsTable {
+     border-collapse: collapse;
+     width: 100%;
+}
+/* End option city */
+/* Search for cities */
+ #autocomplete {
+     width: 100%;
+     height: 40px;
+}
+ #locationField {
+     -webkit-box-flex: 1 1 190px;
+     -ms-flex: 1 1 190px;
+     flex: 1 1 190px;
+     width: 200px;
+     height: 50px;
+     margin: auto;
+     margin-top: 5%;
+}
+/* End Search for cities */
+ 
