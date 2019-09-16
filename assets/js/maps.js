@@ -2,7 +2,12 @@ var map, places, infoWindow;
 var searchSettings;
 var markers = [];
 var autocomplete;
-var ALL_TYPES = ['restaurant', 'lodging', 'place_of_interest'];
+var TYPE_COLOR = {
+	restaurant: 'ff6600',
+	lodging: '33ff00',
+	point_of_interest: '9999ff'
+};
+var ALL_TYPES = ['restaurant', 'lodging', 'point_of_interest'];
 var cityRestrict = {
 	'country': 'iq'
 };
@@ -121,7 +126,7 @@ function initMap() {
 	autocomplete.addListener('place_changed', onPlaceChanged);
 	document.getElementById('restaurant').addEventListener('change', () => searchByTypes(['restaurant']));
 	document.getElementById('hotel').addEventListener('change', () => searchByTypes(['lodging']));
-	document.getElementById('tourist').addEventListener('change', () => searchByTypes(['place_of_interest']));
+	document.getElementById('tourist').addEventListener('change', () => searchByTypes(['point_of_interest']));
 
 	// Add a DOM event listener to react when the user selects a city.
 	document.getElementById('city').addEventListener(
@@ -165,7 +170,7 @@ function search() {
 			// assign a letter of the alphabetic to each marker icon.
 			for (var i = 0; i < results.length; i++) {
 				var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
-				var markerIcon = MARKER_PATH + markerLetter + '.png';
+				var markerIcon = getMarkerUrl(getMainResultType(results[i].types), markerLetter);
 				// Use marker animation to drop the icons incrementally on the map.
 				markers[i] = new google.maps.Marker({
 					position: results[i].geometry.location,
@@ -223,10 +228,20 @@ function dropMarker(i) {
 	};
 }
 
+function getMainResultType(types) {
+	return types.find((type) => {
+		return ['lodging', 'point_of_interest', 'restaurant'].includes(type);
+	});
+}
+
+function getMarkerUrl(type, letter) {
+	var markerColor = TYPE_COLOR[type];
+	return `https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=${letter}|${markerColor}`;
+}
+
 function addResult(result, i) {
 	var results = document.getElementById('results');
 	var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
-	var markerIcon = MARKER_PATH + markerLetter + '.png';
 
 	var tr = document.createElement('tr');
 	tr.style.backgroundColor = (i % 2 === 0 ? '#F0F0F0' : '#FFFFFF');
@@ -237,7 +252,8 @@ function addResult(result, i) {
 	var iconTd = document.createElement('td');
 	var nameTd = document.createElement('td');
 	var icon = document.createElement('img');
-	icon.src = markerIcon;
+	var resultType = getMainResultType(result.types);
+	icon.src = getMarkerUrl(resultType, markerLetter);
 	icon.setAttribute('class', 'placeIcon');
 	icon.setAttribute('className', 'placeIcon');
 	var name = document.createTextNode(result.name);
@@ -274,7 +290,7 @@ function showInfoWindow() {
 
 // Load the place information into the HTML elements used by the info window.
 function buildIWContent(place) {
-	document.getElementById('iw-icon').innerHTML = '<img class="lodgingIcon" ' +
+	document.getElementById('iw-icon').innerHTML = '<img class="hotelIcon" ' +
 		'src="' + place.icon + '"/>';
 	document.getElementById('iw-url').innerHTML = '<b><a href="' + place.url +
 		'">' + place.name + '</a></b>';
