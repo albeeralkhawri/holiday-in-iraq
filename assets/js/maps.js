@@ -128,9 +128,26 @@ function initMap() {
 	document.getElementById('hotel').addEventListener('change', () => searchByTypes(['lodging']));
 	document.getElementById('tourist').addEventListener('change', () => searchByTypes(['point_of_interest']));
 
+
 	// Add a DOM event listener to react when the user selects a city.
-	document.getElementById('city').addEventListener(
-		'change', setCity);
+	document.getElementById('city').addEventListener('change', setCity);
+	document.getElementById('Reset-Button').addEventListener("click", setCity);
+}
+
+// Settings button reset filters
+function Reset() {
+	clearResults();
+	clearMarkers();
+	$('#city')[0].selectedIndex = 0;
+	$("#autocomplete").val("");
+	$('input[name="buton"]').prop('checked', false);
+	$('input[value="hotel"]').prop('checked', true);
+	map.setZoom(6);
+	map.setCenter(countries["iq"].center);
+	map.componentRestrictions = {
+		'city': []
+	};
+	place = "";
 }
 
 // When the user selects a city, get the place details for the city and
