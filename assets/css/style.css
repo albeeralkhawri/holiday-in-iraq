@@ -11,11 +11,12 @@
 }
 /* Size and shape of the maps */
  #map {
+     min-width: 1050px!important;
      min-height: 600px !important;
      max-width: 800px!important;
-     margin-left: auto;
-     margin-right: auto;
-     margin-top: 3%;
+     margin-left: auto!important;
+     margin-right: auto!important;
+     margin-top: 3%!important;
 }
 /* End of maps */
 /* radio Button */
@@ -23,6 +24,7 @@
      display: flex;
      justify-content: center;
      margin: 20px;
+     min-width: 1020px;
 }
  #hotel{
      margin-left: 10px;
@@ -51,11 +53,24 @@
      height: 40px;
 }
  #listing {
-     margin: 50px;
+     max-width: 700px!important;
+     min-width: 1050px!important;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 50px;
+     padding-left: 50px;
+     padding-right: 50px;
+     height: 250px;
 }
  #resultsTable {
      border-collapse: collapse;
      width: 100%;
+}
+ #findcity{
+     max-width: 1200px!important;
+     min-width: 1050px;
+     margin-left: auto;
+     margin-right: auto;
 }
 /* End option city */
 /* Search for cities */
@@ -73,4 +88,50 @@
      margin-top: 5%;
 }
 /* End Search for cities */
+/* info content */
+ #rating {
+     font-size: 13px;
+     font-family: Arial Unicode MS;
+}
+ .iw_table_row {
+     height: 18px;
+}
+ .iw_attribute_name {
+     font-weight: bold;
+     text-align: right;
+}
+ .iw_table_icon {
+     text-align: right;
+}
+/* End info content */
+/* Reset Button */
+ .btn-Reset{
+     float: right;
+     margin: 0 30% auto;
+     height: 80px;
+     margin-top: -95px;
+     width: 90px;
+     border-radius: 12px;
+     -moz-box-shadow: 0px 1px 0px 0px #f0f7fa;
+     -webkit-box-shadow: 0px 1px 0px 0px #f0f7fa;
+     box-shadow: 0px 1px 0px 0px #f0f7fa;
+     background-color: blue;
+     -moz-border-radius:11px;
+     -webkit-border-radius:6px;
+     border-radius:10px;
+     border:1px solid #057fd0;
+     display:inline-block;
+     cursor:pointer;
+     color: white;
+     font-family:Arial;
+     font-size:15px;
+     font-weight:bold;
+     padding:6px 24px;
+     text-decoration:none;
+     text-shadow:0px -1px 0px #5b6178;
+}
+ .btn-Reset:hover {
+     background-color:green;
+}
+/* End Reset Button */
  

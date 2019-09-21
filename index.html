@@ -1,64 +1,90 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <title>Holiday in Iraq</title>
-</head>
-
-<body>
-
-    <div class="search">
-        <div id="findcity">
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+      <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+      <title>Holiday in Iraq</title>
+   </head>
+   <body>
+      <!-- Research Section -->
+      <div class="search">
+         <div id="findcity">
             <div class="search-section" id="locationField">
-            <input id="autocomplete" placeholder="Enter a city" type="text"/>
-      
+               <input id="autocomplete" placeholder="Enter a city" type="text"/>
             </div>
-        
+            <!-- Selection of Cities Section -->
             <div class="select-city" id="controls">
-                <select id="city">
-                    <option value="all">All</option>
-                    <option value="bg">Baghdad</option>
-                    <option value="mo">Mosul</option>
-                    <option value="su">Sulaymaniyah</option>
-                    <option value="bs">Basrah</option>
-                    <option value="er">Erbil</option>
-                    <option value="al">Al-Fallujah</option>
-                    <option value="ka">Kalar</option>
-                    <option value="zu">Zubayr</option>
-                    <option value="sa">Sadr City, Baghdad</option>
-                    <option value="hi">Hillah</option>
-                </select>
+               <select id="city">
+                  <option value="all">All</option>
+                  <option value="bg">Baghdad</option>
+                  <option value="mo">Mosul</option>
+                  <option value="su">Sulaymaniyah</option>
+                  <option value="bs">Basrah</option>
+                  <option value="er">Erbil</option>
+                  <option value="al">Al-Fallujah</option>
+                  <option value="ka">Kalar</option>
+                  <option value="zu">Zubayr</option>
+                  <option value="sa">Sadr City, Baghdad</option>
+                  <option value="hi">Hillah</option>
+               </select>
             </div>
-        </div>
-
-        <div class="input-buton">
+            <!-- Reset filters button -->
+            <button id="Reset-Button" type="Button" class="btn-Reset" onclick="Reset()">Reset All Filters</button>
+         </div>
+         <!-- Radio buttons for type selection -->
+         <div class="input-buton">
             <input type="radio" name="buton" value="hotel" id="hotel" checked>Hotel
             <br>
             <input type="radio" name="buton" value="restaurant" id="restaurant">Restaurant
             <br>
             <input type="radio" name="buton" value="tourist" id="tourist">Tourist
             <br>
-        </div>
-
-        <div id="map">
-        </div>
-
-        <div id="listing">
+         </div>
+         <!-- The Map -->
+         <div id="map">
+         </div>
+         <!-- List of place names -->
+         <div id="listing">
             <table id="resultsTable">
-                <tbody id="results"></tbody>
+               <tbody id="results"></tbody>
             </table>
-        </div>
-
-        <script src="assets/js/maps.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC06WaVX8nqJERnXM_AQu7oMAftxP2UBvE&callback=initMap&libraries=places&callback=initMap" async defer></script>
-</body>
-
+         </div>
+         <!-- Places details -->
+         <div style="display: none">
+            <div id="info-content">
+               <table>
+                  <tr id="iw-url-row" class="iw_table_row">
+                     <td id="iw-icon" class="iw_table_icon"></td>
+                     <td id="iw-url"></td>
+                  </tr>
+                  <tr id="iw-address-row" class="iw_table_row">
+                     <td class="iw_attribute_name">Address:</td>
+                     <td id="iw-address"></td>
+                  </tr>
+                  <tr id="iw-phone-row" class="iw_table_row">
+                     <td class="iw_attribute_name">Telephone:</td>
+                     <td id="iw-phone"></td>
+                  </tr>
+                  <tr id="iw-rating-row" class="iw_table_row">
+                     <td class="iw_attribute_name">Rating:</td>
+                     <td id="iw-rating"></td>
+                  </tr>
+                  <tr id="iw-website-row" class="iw_table_row">
+                     <td class="iw_attribute_name">Website:</td>
+                     <td id="iw-website"></td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+      </div>
+      <script src="assets/js/maps.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC06WaVX8nqJERnXM_AQu7oMAftxP2UBvE&callback=initMap&libraries=places&callback=initMap" async defer></script>
+   </body>
 </html>
