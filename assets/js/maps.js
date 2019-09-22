@@ -96,6 +96,12 @@ var countries = {
 };
 
 function initMap() {
+	// Restrict screen size
+	if ($(window).width() < 1024) {
+		window.document.body.innerHTML = '';
+		alert('Less than 1024');
+		return;
+}
 	map = new google.maps.Map(document.getElementById('map'), {
 		zoom: countries['iq'].zoom,
 		center: countries['iq'].center,
