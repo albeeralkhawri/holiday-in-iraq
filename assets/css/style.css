@@ -47,6 +47,7 @@ input[type='radio'] {
       border-radius: 50%;
       outline: none;
       border: 2px solid blue;
+      -webkit-transition: all 0.35s ease-in-out;
 }
 
 input[type='radio']:before {
@@ -63,12 +64,14 @@ input[type="radio"]:focus {
 
 input[type="radio"]:checked:before {
       background: green;
+      -webkit-transition: all 0.35s ease-in-out;
 }
 input[type=radio]{
       margin: 0px 10px 0px!important;
 }
 input[type="radio"]:checked {
       border-color:green;
+      -webkit-transition: all 0.35s ease-in-out;
 }
     
 .input-buton>label{
@@ -91,6 +94,8 @@ input[type="radio"]:checked {
      height: 40px;
      border-radius: 10px;
      border: 1px solid #057fd0;
+     outline: none;
+     -webkit-transition: all 0.35s ease-in-out!important;
 }
  #listing {
      max-width: 700px!important;
@@ -111,6 +116,7 @@ input[type="radio"]:checked {
      min-width: 1050px;
      margin-left: auto;
      margin-right: auto;
+     -webkit-transition: all 0.35s ease-in-out;
 }
 /* End option city */
 /* Search for cities */
@@ -119,7 +125,14 @@ input[type="radio"]:checked {
      height: 40px;
      border-radius: 10px;
      border: 1px solid #057fd0;
+     outline: none;
+     -webkit-transition: all 0.35s ease-in-out;
 }
+
+#autocomplete:hover,#city:hover{
+ border-color:green!important;
+}
+
  #locationField {
      -webkit-box-flex: 1 1 190px;
      -ms-flex: 1 1 190px;
@@ -171,9 +184,12 @@ input[type="radio"]:checked {
      padding:6px 24px;
      text-decoration:none;
      text-shadow:0px -1px 0px #5b6178;
+     outline: none;
+     -webkit-transition: all 0.35s ease-in-out;
 }
  .btn-Reset:hover {
      background-color:green;
+     -webkit-transition: all 0.35s ease-in-out;
 }
 /* End Reset Button */
 
