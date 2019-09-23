@@ -108,7 +108,7 @@ function initMap() {
 		mapTypeControl: true,
 		panControl: true,
 		zoomControl: true,
-		streetViewControl: false,
+		streetViewControl: false
 	});
 	infoWindow = new google.maps.InfoWindow({
 		content: document.getElementById('info-content')
