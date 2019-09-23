@@ -28,49 +28,49 @@ var countries = {
 			lat: 33.312805,
 			lng: 44.361488
 		},
-		zoom: 10
+		zoom: 11
 	},
 	'mo': {
 		center: {
 			lat: 36.340000,
 			lng: 43.130001
 		},
-		zoom: 10
+		zoom: 12
 	},
 	'su': {
 		center: {
 			lat: 35.566864,
 			lng: 45.416107
 		},
-		zoom: 10
+		zoom: 13
 	},
 	'bs': {
 		center: {
 			lat: 30.508102,
 			lng: 47.783489
 		},
-		zoom: 10
+		zoom: 11
 	},
 	'er': {
 		center: {
 			lat: 36.191113,
 			lng: 44.009167
 		},
-		zoom: 10
+		zoom: 13
 	},
 	'al': {
 		center: {
 			lat: 33.355026,
 			lng: 43.783337
 		},
-		zoom: 10
+		zoom: 12
 	},
 	'ka': {
 		center: {
 			lat: 34.645638,
 			lng: 45.322723
 		},
-		zoom: 11
+		zoom: 12
 	},
 	'zu': {
 		center: {
@@ -91,7 +91,7 @@ var countries = {
 			lat: 32.483334,
 			lng: 44.433334
 		},
-		zoom: 10
+		zoom: 13
 	}
 };
 
@@ -101,13 +101,14 @@ function initMap() {
 		alert('Less than 1024');
 		return;
 }
+ 
 	map = new google.maps.Map(document.getElementById('map'), {
 		zoom: countries['iq'].zoom,
 		center: countries['iq'].center,
 		mapTypeControl: true,
 		panControl: true,
 		zoomControl: true,
-		streetViewControl: false
+		streetViewControl: false,
 	});
 	infoWindow = new google.maps.InfoWindow({
 		content: document.getElementById('info-content')
