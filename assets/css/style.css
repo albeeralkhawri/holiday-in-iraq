@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
  html, body {
      height: 100%;
      margin: 0;
@@ -5,7 +6,8 @@
 }
  body {
      padding: 0 !important;
-     background-color: #ecffee
+     background-color: #ecffee;
+     font-family: 'Righteous', cursive!important;
 }
  table {
      font-size: 12px;
@@ -18,6 +20,10 @@
      margin-left: auto!important;
      margin-right: auto!important;
      margin-top: 3%!important;
+}
+
+.gm-style .gm-style-iw,.gm-style .gm-style-mtc div{
+ font-family: 'Righteous', cursive!important;
 }
 /* End of maps */
 /* radio Button */
@@ -132,6 +138,9 @@ input[type="radio"]:checked {
 #autocomplete:hover,#city:hover{
  border-color:green!important;
 }
+.pac-item{
+ font-family: 'Righteous', cursive;
+}
 
  #locationField {
      -webkit-box-flex: 1 1 190px;
@@ -161,6 +170,7 @@ input[type="radio"]:checked {
 /* End info content */
 /* Reset Button */
  .btn-Reset{
+     font-family: 'Righteous', cursive;
      float: right;
      margin: 0 30% auto;
      height: 80px;
@@ -177,10 +187,8 @@ input[type="radio"]:checked {
      border:1px solid #057fd0;
      display:inline-block;
      cursor:pointer;
-     color: white;
-     font-family:Arial;
      font-size:15px;
-     font-weight:bold;
+     color: #fff;
      padding:6px 24px;
      text-decoration:none;
      text-shadow:0px -1px 0px #5b6178;
