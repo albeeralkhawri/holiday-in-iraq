@@ -98,7 +98,6 @@ var countries = {
 function initMap() {
 	// Restrict screen size
 	if ($(window).width() < 1024) {
-		window.document.body.innerHTML = '';
 		alert('Less than 1024');
 		return;
 }
