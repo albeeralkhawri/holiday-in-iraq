@@ -12,6 +12,17 @@
  table {
      font-size: 12px;
 }
+/* NavBar Section */
+.navbar-nav{
+ float: right;
+}
+.navbar-inverse .navbar-brand,.navbar-inverse .navbar-nav>li>a{
+ color: #ffffffbf;
+}
+
+.navbar-inverse .navbar-brand:hover,.navbar-inverse .navbar-nav>li>a:hover{
+ color: #057fd0;
+}
 /* Size and shape of the maps */
  #map {
      min-width: 1050px!important;
@@ -228,3 +239,96 @@ input[type="radio"]:checked {
 }
 
 /*ُ End Restrict screen size */
+
+/* Baghdad landmarks */
+#baghdad{
+    float: right;
+    margin-left: auto;
+    border-radius: 15px;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 5%;
+}
+.baghdad{
+    margin-left: auto;
+    display: inline-block;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 7%;
+    font-size: xx-large!important;
+}
+
+p{
+ font-size: x-large;
+ text-align: center
+}
+
+.su,.er,.ba,.mo{
+    margin-top: 20%;
+}
+
+#sulaymaniyah{
+    float: left;
+    margin-left: auto;
+    border-radius: 15px;
+    margin-right: auto;
+    width: 50%;
+ 
+}
+.Sulaymaniyah{
+    margin-left: auto;
+    display: inline-block;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 7%;
+    font-size: xx-large!important;
+}
+#erbil{
+    float: right;
+    margin-left: auto;
+    border-radius: 15px;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 5%;
+}
+.Erbil{
+    margin-left: auto;
+    display: inline-block;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 7%;
+    font-size: xx-large!important;
+}
+
+#basrah{
+    float: left;
+    margin-left: auto;
+    border-radius: 15px;
+    margin-right: auto;
+    width: 50%;
+ 
+}
+.Basrah{
+    margin-left: auto;
+    display: flow-root;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 7%;
+    font-size: xx-large!important;
+}
+#mosul{
+    float: right;
+    margin-left: auto;
+    border-radius: 15px;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 5%;
+}
+.Mosul{
+    margin-left: auto;
+    display: inline-block;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 7%;
+    font-size: xx-large!important;
+}
