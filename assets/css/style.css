@@ -25,7 +25,7 @@
 }
 /* Size and shape of the maps */
  #map {
-     min-width: 1050px!important;
+     min-width: 1024px!important;
      min-height: 600px !important;
      max-width: 800px!important;
      margin-left: auto!important;
@@ -42,8 +42,7 @@
      display: flex;
      justify-content: center;
      margin: 20px;
-     min-width: 1020px;
-}
+ }
  #hotel{
      margin-left: 10px;
      margin-right: 10px;
@@ -116,7 +115,7 @@ input[type="radio"]:checked {
 }
  #listing {
      max-width: 700px!important;
-     min-width: 1050px!important;
+     min-width: 1024px!important;
      margin-left: auto;
      margin-right: auto;
      margin-top: 50px;
@@ -129,10 +128,9 @@ input[type="radio"]:checked {
      width: 100%;
 }
  #findcity{
-     max-width: 1200px!important;
-     min-width: 1050px;
      margin-left: auto;
      margin-right: auto;
+     max-width: 1024px;
      -webkit-transition: all 0.35s ease-in-out;
 }
 /* End option city */
@@ -215,7 +213,7 @@ input[type="radio"]:checked {
 /* Restrict screen size */
 
 @media all and (max-width: 1024px) {
-    .Main{
+    .Main,.footer{
      display: none!important;
     }
     .restrict-screen{
@@ -240,7 +238,7 @@ input[type="radio"]:checked {
 
 /*ُ End Restrict screen size */
 
-/* Baghdad landmarks */
+/* city landmarks */
 #baghdad{
     float: right;
     margin-left: auto;
@@ -323,6 +321,7 @@ p{
     margin-right: auto;
     width: 50%;
     margin-top: 5%;
+    margin-bottom: 5%
 }
 .Mosul{
     margin-left: auto;
@@ -331,4 +330,33 @@ p{
     width: 50%;
     margin-top: 7%;
     font-size: xx-large!important;
+}
+/* End city */
+.marker{
+ display: flex;
+ width:700px;
+ margin-left: auto;
+ margin-right: auto
+}
+
+.fa-map-marker{
+  justify-content: center!important;
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+
+.goup{
+   position: fixed;
+   float: right;
+   width: 1024px;
+   left: 88%;
+   color: blue;
+   top:20%;
+   text-decoration: none!important;
+   font-size: xx-large!important;
+}
+
+.goup:hover{
+ color: green;
+ background-position: top!important;
 }
