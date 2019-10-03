@@ -18,22 +18,22 @@
          <h3>Unfortunately, Holiday in Iraq does not work on screens smaller than 1024</h3>
          <img src="assets/images/Iraqi landmarks.jpg" alt="Iraqi landmarks" >
       </div>
-      <div class="Main">
-         <!-- NavBar Section -->
-         <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-               <div class="navbar-header">
-                  <a class="navbar-brand" id="goup">Holiday in Iraq</a>
-               </div>
-               <ul class="nav navbar-nav">
-                  <li><a href="#mosul">Mosul</a></li>
-                  <li><a href="#basrah">Basrah</a></li>
-                  <li><a href="#erbil">Erbil</a></li>
-                  <li><a href="#sulaymaniyah">Sulaymaniyah</a></li>
-                  <li><a href="#baghdad">Baghdad</a></li>
-               </ul>
+      <!-- NavBar Section -->
+      <nav class="navbar navbar-inverse">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <a class="navbar-brand" id="goup">Holiday in Iraq</a>
             </div>
-         </nav>
+            <ul class="nav navbar-nav">
+               <li><a href="#mosul">Mosul</a></li>
+               <li><a href="#basrah">Basrah</a></li>
+               <li><a href="#erbil">Erbil</a></li>
+               <li><a href="#sulaymaniyah">Sulaymaniyah</a></li>
+               <li><a href="#baghdad">Baghdad</a></li>
+            </ul>
+         </div>
+      </nav>
+      <div class="Main">
          <!-- Research Section -->
          <div id="findcity">
             <div class="search-section" id="locationField">
@@ -67,9 +67,17 @@
             <label><input type="radio" name="buton" value="tourist" id="tourist">Tourist</label>
             <br>
          </div>
-         <a href="#goup" class="goup">Go Up</a>
+         <div class="go">
+            <a href="#goup" class="goup">Go Up</a>
+         </div>
          <!-- The Map -->
          <div id="map">
+         </div>
+         <!-- Marker -->
+         <div class="marker">
+            <i class="fa fa-map-marker" aria-hidden="true" style="color:#2ddb01;"> Hotel </i>
+            <i class="fa fa-map-marker" aria-hidden="true" style="color:#db5801;"> Restaurant </i>
+            <i class="fa fa-map-marker" aria-hidden="true" style="color:#8585dd;"> Tourist </i>
          </div>
          <!-- List of place names -->
          <div id="listing">

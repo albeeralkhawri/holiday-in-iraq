@@ -209,11 +209,17 @@ input[type="radio"]:checked {
      -webkit-transition: all 0.35s ease-in-out;
 }
 /* End Reset Button */
-
+/* Width of main */
+.Main{
+ max-width: 1024px;
+ margin-left: auto;
+ margin-right: auto
+}
+/* End Width of main */
 /* Restrict screen size */
 
 @media all and (max-width: 1024px) {
-    .Main,.footer{
+    .Main,.footer,.navbar{
      display: none!important;
     }
     .restrict-screen{
@@ -332,31 +338,42 @@ p{
     font-size: xx-large!important;
 }
 /* End city */
+
+/* Marker */
 .marker{
  display: flex;
  width:700px;
  margin-left: auto;
- margin-right: auto
+ margin-right: auto;
+ margin-top:3%;
+ font-size: x-large;
 }
-
 .fa-map-marker{
   justify-content: center!important;
   margin-left: auto!important;
   margin-right: auto!important;
 }
 
+/* End Marker */
+
+/* go up button */
 .goup{
    position: fixed;
-   float: right;
-   width: 1024px;
-   left: 88%;
    color: blue;
    top:20%;
    text-decoration: none!important;
    font-size: xx-large!important;
+   z-index: 1
+   
 }
 
 .goup:hover{
  color: green;
  background-position: top!important;
 }
+
+.go{
+float: right!important;
+width: 100px
+}
+/* End go up button */
