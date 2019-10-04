@@ -368,12 +368,99 @@ p{
 }
 
 .goup:hover{
- color: green;
- background-position: top!important;
+   color: green;
+   background-position: top!important;
 }
 
 .go{
-float: right!important;
-width: 100px
+   float: right!important;
+   width: 100px;
 }
 /* End go up button */
+
+/* Footer */
+.footer {
+    clear: both;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #222;
+    color: #ffffffbf;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    margin-top: 10em;
+    display: table;
+    border-radius: 3px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: auto;
+  text-align: center;
+  text-decoration: none!important;
+  outline: none;
+  margin: 5px 2px;
+  border-radius: 10px;
+  margin-left: 10px
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.so{
+ float: left!important;
+}
+.focity{
+  float: right!important;
+  text-align: right!important;
+  margin-right: 20px;
+  text-decoration: none!important;
+  outline: none!important;
+  font-size: 20px;
+  margin-top: -40px;
+  
+  
+}
+.focity>a{
+ margin-right: 10px;
+ color: #ffffffbf!important;
+}
+.focity>a:hover{
+ color: #057fd0!important
+}
+.th{
+ text-align: center!important;
+ margin-right: 23em;
+ font-size: 15px;
+ padding-top: 20px;
+}
+a{
+ text-decoration: none!important;
+ outline: none!important;
+}
+/* End Footer */
