@@ -346,11 +346,9 @@ function buildIWContent(place) {
 	// The regexp isolates the first part of the URL (domain plus subdomain)
 	// to give a short URL for displaying in the info window.
 	if (place.website) {
-		var fullUrl = place.website;
 		var website = hostnameRegexp.exec(place.website);
 		if (website === null) {
 			website = 'http://' + place.website + '/';
-			fullUrl = website;
 		}
 		document.getElementById('iw-website-row').style.display = '';
 		document.getElementById('iw-website').textContent = website;
