@@ -13,15 +13,14 @@
      font-size: 12px;
 }
 /* NavBar Section */
-.navbar-nav{
- float: right;
+ .navbar-nav{
+     float: right;
 }
-.navbar-inverse .navbar-brand,.navbar-inverse .navbar-nav>li>a{
- color: #ffffffbf;
+ .navbar-inverse .navbar-brand,.navbar-inverse .navbar-nav>li>a{
+     color: #ffffffbf;
 }
-
-.navbar-inverse .navbar-brand:hover,.navbar-inverse .navbar-nav>li>a:hover{
- color: #057fd0;
+ .navbar-inverse .navbar-brand:hover,.navbar-inverse .navbar-nav>li>a:hover{
+     color: #057fd0;
 }
 /* Size and shape of the maps */
  #map {
@@ -32,9 +31,8 @@
      margin-right: auto!important;
      margin-top: 3%!important;
 }
-
-.gm-style .gm-style-iw,.gm-style .gm-style-mtc div{
- font-family: 'Righteous', cursive!important;
+ .gm-style .gm-style-iw,.gm-style .gm-style-mtc div{
+     font-family: 'Righteous', cursive!important;
 }
 /* End of maps */
 /* radio Button */
@@ -42,7 +40,7 @@
      display: flex;
      justify-content: center;
      margin: 20px;
- }
+}
  #hotel{
      margin-left: 10px;
      margin-right: 10px;
@@ -55,45 +53,41 @@
      margin-left: 10px;
      margin-right: 10px;
 }
-
-input[type='radio'] {
+ input[type='radio'] {
      -webkit-appearance: none;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      outline: none;
-      border: 2px solid blue;
-      -webkit-transition: all 0.35s ease-in-out;
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     outline: none;
+     border: 2px solid blue;
+     -webkit-transition: all 0.35s ease-in-out;
 }
-
-input[type='radio']:before {
-      content: '';
-      display: block;
-      width: 50%;
-      height: 50%;
-      margin: 25% auto;
-      border-radius: 50%;
+ input[type='radio']:before {
+     content: '';
+     display: block;
+     width: 50%;
+     height: 50%;
+     margin: 25% auto;
+     border-radius: 50%;
 }
-input[type="radio"]:focus {
-      outline: none;
+ input[type="radio"]:focus {
+     outline: none;
 }
-
-input[type="radio"]:checked:before {
-      background: green;
-      -webkit-transition: all 0.35s ease-in-out;
+ input[type="radio"]:checked:before {
+     background: green;
+     -webkit-transition: all 0.35s ease-in-out;
 }
-input[type=radio]{
-      margin: 0px 10px 0px!important;
+ input[type=radio]{
+     margin: 0px 10px 0px!important;
 }
-input[type="radio"]:checked {
-      border-color:green;
-      -webkit-transition: all 0.35s ease-in-out;
+ input[type="radio"]:checked {
+     border-color:green;
+     -webkit-transition: all 0.35s ease-in-out;
 }
-    
-.input-buton>label{
-      display: flex;
-      justify-content: center;
-      font-weight: normal;
+ .input-buton>label{
+     display: flex;
+     justify-content: center;
+     font-weight: normal;
 }
 /* End radio Button */
 /* option city */
@@ -143,14 +137,12 @@ input[type="radio"]:checked {
      outline: none;
      -webkit-transition: all 0.35s ease-in-out;
 }
-
-#autocomplete:hover,#city:hover{
- border-color:green!important;
+ #autocomplete:hover,#city:hover{
+     border-color:green!important;
 }
-.pac-item{
- font-family: 'Righteous', cursive;
+ .pac-item{
+     font-family: 'Righteous', cursive;
 }
-
  #locationField {
      -webkit-box-flex: 1 1 190px;
      -ms-flex: 1 1 190px;
@@ -164,7 +156,6 @@ input[type="radio"]:checked {
 /* info content */
  #rating {
      font-size: 13px;
-     font-family: Arial Unicode MS;
 }
  .iw_table_row {
      height: 18px;
@@ -210,257 +201,230 @@ input[type="radio"]:checked {
 }
 /* End Reset Button */
 /* Width of main */
-.Main{
- max-width: 1024px;
- margin-left: auto;
- margin-right: auto
+ .Main{
+     max-width: 1024px;
+     margin-left: auto;
+     margin-right: auto
 }
 /* End Width of main */
 /* Restrict screen size */
-
-@media all and (max-width: 1024px) {
-    .Main,.footer,.navbar{
-     display: none!important;
+ @media all and (max-width: 1024px) {
+     .Main,.footer,.navbar{
+         display: none!important;
     }
-    .restrict-screen{
-     display: table!important;
-     justify-content: center;
-     margin-top: 10%;
+     .restrict-screen{
+         display: table!important;
+         justify-content: center;
+         margin-top: 10%;
     }
-    h3{
-     display: flex!important;
-     justify-content: center;
+     h3{
+         display: flex!important;
+         justify-content: center;
     }
-    img{
-     display: block!important;
-     justify-content: center!important;
-     border-radius: 15px;
-     margin-top: 10%;
+     img{
+         display: block!important;
+         justify-content: center!important;
+         border-radius: 15px;
+         margin-top: 10%;
+         margin-left: auto;
+         margin-right: auto;
+         width: 50%;
+    }
+}
+/*ُ End Restrict screen size */
+/* city landmarks */
+ #baghdad{
+     float: right;
      margin-left: auto;
+     border-radius: 15px;
      margin-right: auto;
      width: 50%;
-    }
+     margin-top: 5%;
 }
-
-/*ُ End Restrict screen size */
-
-/* city landmarks */
-#baghdad{
-    float: right;
-    margin-left: auto;
-    border-radius: 15px;
-    margin-right: auto;
-    width: 50%;
-    margin-top: 5%;
+ .baghdad{
+     margin-left: auto;
+     display: inline-block;
+     margin-right: auto;
+     width: 50%;
+     margin-top: 7%;
+     font-size: xx-large!important;
 }
-.baghdad{
-    margin-left: auto;
-    display: inline-block;
-    margin-right: auto;
-    width: 50%;
-    margin-top: 7%;
-    font-size: xx-large!important;
+ p{
+     font-size: x-large;
+     text-align: center
 }
-
-p{
- font-size: x-large;
- text-align: center
+ .su,.er,.ba,.mo{
+     margin-top: 20%;
 }
-
-.su,.er,.ba,.mo{
-    margin-top: 20%;
+ #sulaymaniyah{
+     float: left;
+     margin-left: auto;
+     border-radius: 15px;
+     margin-right: auto;
+     width: 50%;
 }
-
-#sulaymaniyah{
-    float: left;
-    margin-left: auto;
-    border-radius: 15px;
-    margin-right: auto;
-    width: 50%;
- 
+ .Sulaymaniyah{
+     margin-left: auto;
+     display: inline-block;
+     margin-right: auto;
+     width: 50%;
+     margin-top: 7%;
+     font-size: xx-large!important;
 }
-.Sulaymaniyah{
-    margin-left: auto;
-    display: inline-block;
-    margin-right: auto;
-    width: 50%;
-    margin-top: 7%;
-    font-size: xx-large!important;
+ #erbil{
+     float: right;
+     margin-left: auto;
+     border-radius: 15px;
+     margin-right: auto;
+     width: 50%;
+     margin-top: 5%;
 }
-#erbil{
-    float: right;
-    margin-left: auto;
-    border-radius: 15px;
-    margin-right: auto;
-    width: 50%;
-    margin-top: 5%;
+ .Erbil{
+     margin-left: auto;
+     display: inline-block;
+     margin-right: auto;
+     width: 50%;
+     margin-top: 7%;
+     font-size: xx-large!important;
 }
-.Erbil{
-    margin-left: auto;
-    display: inline-block;
-    margin-right: auto;
-    width: 50%;
-    margin-top: 7%;
-    font-size: xx-large!important;
+ #basrah{
+     float: left;
+     margin-left: auto;
+     border-radius: 15px;
+     margin-right: auto;
+     width: 50%;
 }
-
-#basrah{
-    float: left;
-    margin-left: auto;
-    border-radius: 15px;
-    margin-right: auto;
-    width: 50%;
- 
+ .Basrah{
+     margin-left: auto;
+     display: flow-root;
+     margin-right: auto;
+     width: 50%;
+     margin-top: 7%;
+     font-size: xx-large!important;
 }
-.Basrah{
-    margin-left: auto;
-    display: flow-root;
-    margin-right: auto;
-    width: 50%;
-    margin-top: 7%;
-    font-size: xx-large!important;
+ #mosul{
+     float: right;
+     margin-left: auto;
+     border-radius: 15px;
+     margin-right: auto;
+     width: 50%;
+     margin-top: 5%;
+     margin-bottom: 5%
 }
-#mosul{
-    float: right;
-    margin-left: auto;
-    border-radius: 15px;
-    margin-right: auto;
-    width: 50%;
-    margin-top: 5%;
-    margin-bottom: 5%
-}
-.Mosul{
-    margin-left: auto;
-    display: inline-block;
-    margin-right: auto;
-    width: 50%;
-    margin-top: 7%;
-    font-size: xx-large!important;
+ .Mosul{
+     margin-left: auto;
+     display: inline-block;
+     margin-right: auto;
+     width: 50%;
+     margin-top: 7%;
+     font-size: xx-large!important;
 }
 /* End city */
-
 /* Marker */
-.marker{
- display: flex;
- width:700px;
- margin-left: auto;
- margin-right: auto;
- margin-top:3%;
- font-size: x-large;
+ .marker{
+     display: flex;
+     width:700px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top:3%;
+     font-size: x-large;
 }
-.fa-map-marker{
-  justify-content: center!important;
-  margin-left: auto!important;
-  margin-right: auto!important;
+ .fa-map-marker{
+     justify-content: center!important;
+     margin-left: auto!important;
+     margin-right: auto!important;
 }
-
 /* End Marker */
-
 /* go up button */
-.goup{
-   position: fixed;
-   color: blue;
-   top:20%;
-   text-decoration: none!important;
-   font-size: xx-large!important;
-   z-index: 1
-   
+ .goup{
+     position: fixed;
+     color: blue;
+     top:20%;
+     text-decoration: none!important;
+     font-size: xx-large!important;
+     z-index: 1
 }
-
-.goup:hover{
-   color: green;
-   background-position: top!important;
+ .goup:hover{
+     color: green;
+     background-position: top!important;
 }
-
-.go{
-   float: right!important;
-   width: 100px;
+ .go{
+     float: right!important;
+     width: 100px;
 }
 /* End go up button */
-
 /* Footer */
-.footer {
-    clear: both;
-    position: relative;
-    width: 100%;
-    height: auto;
-    background-color: #222;
-    color: #ffffffbf;
-    text-align: center;
-    left: 0;
-    bottom: 0;
-    margin-top: 10em;
-    display: table;
-    border-radius: 3px;
+ .footer {
+     clear: both;
+     position: relative;
+     width: 100%;
+     height: auto;
+     background-color: #222;
+     color: #ffffffbf;
+     text-align: center;
+     left: 0;
+     bottom: 0;
+     margin-top: 10em;
+     display: table;
+     border-radius: 3px;
 }
-
-.fa {
-  padding: 20px;
-  font-size: 20px;
-  width: auto;
-  text-align: center;
-  text-decoration: none!important;
-  outline: none;
-  margin: 5px 2px;
-  border-radius: 10px;
-  margin-left: 10px
-  
+ .fa {
+     padding: 20px;
+     font-size: 20px;
+     width: auto;
+     text-align: center;
+     text-decoration: none!important;
+     outline: none;
+     margin: 5px 2px;
+     border-radius: 10px;
+     margin-left: 10px
 }
-
-.fa:hover {
-    opacity: 0.7;
+ .fa:hover {
+     opacity: 0.7;
 }
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
+ .fa-facebook {
+     background: #3B5998;
+     color: white;
 }
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
+ .fa-twitter {
+     background: #55ACEE;
+     color: white;
 }
-
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
+ .fa-linkedin {
+     background: #007bb5;
+     color: white;
 }
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
+ .fa-youtube {
+     background: #bb0000;
+     color: white;
 }
-
-.so{
- float: left!important;
+ .so{
+     float: left!important;
 }
-.focity{
-  float: right!important;
-  text-align: right!important;
-  margin-right: 20px;
-  text-decoration: none!important;
-  outline: none!important;
-  font-size: 20px;
-  margin-top: -40px;
-  
-  
+ .focity{
+     float: right!important;
+     text-align: right!important;
+     margin-right: 20px;
+     text-decoration: none!important;
+     outline: none!important;
+     font-size: 20px;
+     margin-top: -40px;
 }
-.focity>a{
- margin-right: 10px;
- color: #ffffffbf!important;
+ .focity>a{
+     margin-right: 10px;
+     color: #ffffffbf!important;
 }
-.focity>a:hover{
- color: #057fd0!important
+ .focity>a:hover{
+     color: #057fd0!important
 }
-.th{
- text-align: center!important;
- margin-right: 23em;
- font-size: 15px;
- padding-top: 20px;
+ .th{
+     text-align: center!important;
+     margin-right: 23em;
+     font-size: 15px;
+     padding-top: 20px;
 }
-a{
- text-decoration: none!important;
- outline: none!important;
+ a{
+     text-decoration: none!important;
+     outline: none!important;
 }
 /* End Footer */

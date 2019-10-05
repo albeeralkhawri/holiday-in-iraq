@@ -11,7 +11,7 @@ var ALL_TYPES = ['restaurant', 'lodging', 'point_of_interest'];
 var cityRestrict = {
 	'country': 'iq'
 };
-var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_green';
+
 var hostnameRegexp = new RegExp('^https?://.+?/');
 
 // List of Iraqi cities location on the map and zoom for each city
@@ -101,7 +101,7 @@ function initMap() {
 		alert('Less than 1024');
 		return;
 }
- 
+
 	map = new google.maps.Map(document.getElementById('map'), {
 		zoom: countries['iq'].zoom,
 		center: countries['iq'].center,
@@ -295,7 +295,7 @@ function clearResults() {
 }
 
 // Get the place details for a hotel, restaurant or tourist area.
-//Display information in the information window, installed on the hotel, 
+//Display information in the information window, installed on the hotel,
 //restaurant or tourist marker specified by the user.
 function showInfoWindow() {
 	var marker = this;
