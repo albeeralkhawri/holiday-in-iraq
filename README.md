@@ -76,7 +76,7 @@ The code was checked by <a href="https://jshint.com/"> JS Hint</a>
 
 - Checked the site on the browser Google Chrome and Firefox and was working in a wonderful way
 <p align="center">Google Chrome</p>
-<p align="center"><img src="https://www.up-00.com/i/00142/qdjdsk08w2rp.gif"></p>
+<p align="center"><img src="https://www.up-00.com/i/00142/u2ce2x9p16nf.gif"></p>
 <p align="center">Mozilla Firefox</p>
 <p align="center"><img src="https://www.up-00.com/i/00142/fe1sy3aj3sty.gif"></p>
 
