@@ -93,12 +93,6 @@ The code was checked by <a href="https://jshint.com/"> JS Hint</a>
 <p align="center"><img src="https://www.up-00.com/i/00142/vwrhe8iuhn23.png"></p>
 
 ***
-## SECURITY
-
-##### *The API key is secured by Website restrictions*
-<img src="https://www.up-00.com/i/00142/8ke60rkw33ks.png">
-
-***
 # Deployment
 
 ###### The site was hosted by Github as you details below
